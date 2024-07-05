@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "example",
+	"version": "${version}",
+	"name": "Fabric Example",
+	"description": "A mod to help out new modders learn moding !",
+	"authors": [
+		"zerocool"
+	],
+	"contact": {
+	},
+	"license": "Unlicense",
+	"icon": "assets/example/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.FabricExample"
+		],
+		"client": [
+			"com.example.FabricExampleClient"
+		],
+		"fabric-datagen": [
+			"com.example.ExampleDataGen"
+		]
+	},
+	"mixins": [
+		"example.mixins.json",
+		{
+			"config": "example.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

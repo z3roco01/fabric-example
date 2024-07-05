@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "example:block/food_chest"
+    }
+  }
+}

@@ -1,0 +1,148 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 2024-07-01 03:30:38
+Description: Initializing game
+
+java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'fabric_example'!
+	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$2(FabricLoaderImpl.java:388)
+	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:386)
+	at net.fabricmc.loader.impl.game.minecraft.Hooks.startClient(Hooks.java:52)
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:484)
+	at net.minecraft.client.main.Main.main(Main.java:223)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:470)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: java.lang.ExceptionInInitializerError
+	at com.example.FabricExample.onInitialize(FabricExample.java:31)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:384)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: Cannot set property BooleanProperty{name=is_lit, clazz=class java.lang.Boolean, values=[true, false]} as it does not exist in Block{minecraft:air}
+	at net.minecraft.state.State.with(State.java:113)
+	at block.com.example.WallConditionalTorch.setDefaultState(WallConditionalTorch.java:52)
+	at block.com.example.ConditionalTorch.<init>(ConditionalTorch.java:33)
+	at block.com.example.WallConditionalTorch.<init>(WallConditionalTorch.java:46)
+	at block.com.example.WallConditionalTorch.<init>(WallConditionalTorch.java:42)
+	at block.com.example.ExampleBlocks.<clinit>(ExampleBlocks.java:23)
+	... 9 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$2(FabricLoaderImpl.java:388)
+	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:386)
+	at net.fabricmc.loader.impl.game.minecraft.Hooks.startClient(Hooks.java:52)
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:484)
+
+-- Initialization --
+Details:
+	Modules: 
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:223)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:470)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.6
+	Minecraft Version ID: 1.20.6
+	Operating System: Linux (amd64) version 6.9.5-arch1-1
+	Java Version: 21.0.3, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 168850400 bytes (161 MiB) / 583008256 bytes (556 MiB) up to 4169138176 bytes (3976 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+	Identifier: Intel64 Family 6 Model 94 Stepping 3
+	Microarchitecture: Skylake (Client)
+	Frequency (GHz): 3.20
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 4
+	Graphics card #0 name: TU106 [GeForce GTX 1650]
+	Graphics card #0 vendor: NVIDIA Corporation (0x10de)
+	Graphics card #0 VRAM (MB): 288.00
+	Graphics card #0 deviceId: 0x1f0a
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 9999.26
+	Virtual memory used (MB): 9574.87
+	Swap memory total (MB): 2048.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 0 total; 
+	Fabric Mods: 
+		fabric-api: Fabric API 0.100.4+1.20.6
+		fabric-api-base: Fabric API Base 0.4.40+80f8cf51b0
+		fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.59+e9d2a72bb0
+		fabric-biome-api-v1: Fabric Biome API (v1) 13.0.25+be5d88beb0
+		fabric-block-api-v1: Fabric Block API (v1) 1.0.20+6dfe4c9bb0
+		fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.8+80f8cf51b0
+		fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.50+80f8cf51b0
+		fabric-client-tags-api-v1: Fabric Client Tags 1.1.12+7f945d5bb0
+		fabric-command-api-v1: Fabric Command API (v1) 1.2.45+f71b366fb0
+		fabric-command-api-v2: Fabric Command API (v2) 2.2.24+80f8cf51b0
+		fabric-commands-v0: Fabric Commands (v0) 0.2.62+df3654b3b0
+		fabric-content-registries-v0: Fabric Content Registries (v0) 8.0.6+b82b2392b0
+		fabric-convention-tags-v1: Fabric Convention Tags 2.0.7+7f945d5bb0
+		fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.1.3+f4bfb622b0
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.27+80f8cf51b0
+		fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.1.17+2a2c66b6b0
+		fabric-data-generation-api-v1: Fabric Data Generation API (v1) 19.2.4+a5d5299db0
+		fabric-dimensions-v1: Fabric Dimensions API (v1) 2.1.68+94793913b0
+		fabric-entity-events-v1: Fabric Entity Events (v1) 1.6.8+e9d2a72bb0
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.7.6+c5fc38b3b0
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.50+80f8cf51b0
+		fabric-gametest-api-v1: Fabric Game Test API (v1) 1.3.18+1172e897b0
+		fabric-item-api-v1: Fabric Item API (v1) 8.2.3+6e5bbc4ab0
+		fabric-item-group-api-v1: Fabric Item Group API (v1) 4.1.1+f4bfb622b0
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.45+80f8cf51b0
+		fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.43+df3654b3b0
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.3.4+c5fc38b3b0
+		fabric-loot-api-v2: Fabric Loot API (v2) 3.0.6+97f703dab0
+		fabric-message-api-v1: Fabric Message API (v1) 6.0.11+a7dc0e41b0
+		fabric-model-loading-api-v1: Fabric Model Loading API (v1) 1.0.12+80f8cf51b0
+		fabric-models-v0: Fabric Models (v0) 0.4.11+9386d8a7b0
+		fabric-networking-api-v1: Fabric Networking API (v1) 4.2.0+a916f7c5b0
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 15.1.5+c5fc38b3b0
+		fabric-particles-v1: Fabric Particles (v1) 4.0.0+c5fc38b3b0
+		fabric-recipe-api-v1: Fabric Recipe API (v1) 5.0.6+9c745bbbb0
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 5.0.18+a916f7c5b0
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 3.3.0+81dac6a1b0
+		fabric-renderer-indigo: Fabric Renderer - Indigo 1.5.15+41791025b0
+		fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.62+df3654b3b0
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.46+73761d2eb0
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.3+2c869dedb0
+		fabric-rendering-v0: Fabric Rendering (v0) 1.1.65+df3654b3b0
+		fabric-rendering-v1: Fabric Rendering (v1) 4.2.5+850ef40bb0
+		fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 4.2.0+a5d5299db0
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 1.1.1+f4bfb622b0
+		fabric-screen-api-v1: Fabric Screen API (v1) 2.0.21+7b70ea8ab0
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.75+8c7b71c2b0
+		fabric-sound-api-v1: Fabric Sound API (v1) 1.0.21+c5fc38b3b0
+		fabric-transfer-api-v1: Fabric Transfer API (v1) 5.1.7+7fc4b352b0
+		fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 6.0.10+74e2f560b0
+		fabric_example: Fabric Example 1.0.0
+		fabricloader: Fabric Loader 0.15.11
+		java: OpenJDK 64-Bit Server VM 21
+		minecraft: Minecraft 1.20.6
+		mixinextras: MixinExtras 0.3.5
+	Launched Version: Fabric
+	Backend library: LWJGL version 3.3.3-snapshot
+	Backend API: Unknown
+	Window size: <not initialized>
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: <disabled>
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Universe: 404
+	Type: Client (map_client.txt)
+	Locale: en_US
+	CPU: <unknown>

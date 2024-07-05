@@ -1,0 +1,58 @@
+[12:22:24] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.6 with Fabric Loader 0.15.11
+[12:22:25] [main/INFO] (FabricLoader) Loading 42 mods:
+	- example 1.0.0
+	- fabric-api 0.100.4+1.20.6
+	- fabric-api-base 0.4.40+80f8cf51b0
+	- fabric-api-lookup-api-v1 1.6.59+e9d2a72bb0
+	- fabric-biome-api-v1 13.0.25+be5d88beb0
+	- fabric-block-api-v1 1.0.20+6dfe4c9bb0
+	- fabric-block-view-api-v2 1.0.8+80f8cf51b0
+	- fabric-command-api-v1 1.2.45+f71b366fb0
+	- fabric-command-api-v2 2.2.24+80f8cf51b0
+	- fabric-commands-v0 0.2.62+df3654b3b0
+	- fabric-content-registries-v0 8.0.6+b82b2392b0
+	- fabric-convention-tags-v1 2.0.7+7f945d5bb0
+	- fabric-convention-tags-v2 2.1.3+f4bfb622b0
+	- fabric-crash-report-info-v1 0.2.27+80f8cf51b0
+	- fabric-data-attachment-api-v1 1.1.17+2a2c66b6b0
+	- fabric-data-generation-api-v1 19.2.4+a5d5299db0
+	- fabric-dimensions-v1 2.1.68+94793913b0
+	- fabric-entity-events-v1 1.6.8+e9d2a72bb0
+	- fabric-events-interaction-v0 0.7.6+c5fc38b3b0
+	- fabric-game-rule-api-v1 1.0.50+80f8cf51b0
+	- fabric-gametest-api-v1 1.3.18+1172e897b0
+	- fabric-item-api-v1 8.2.3+6e5bbc4ab0
+	- fabric-item-group-api-v1 4.1.1+f4bfb622b0
+	- fabric-lifecycle-events-v1 2.3.4+c5fc38b3b0
+	- fabric-loot-api-v2 3.0.6+97f703dab0
+	- fabric-message-api-v1 6.0.11+a7dc0e41b0
+	- fabric-networking-api-v1 4.2.0+a916f7c5b0
+	- fabric-object-builder-api-v1 15.1.5+c5fc38b3b0
+	- fabric-particles-v1 4.0.0+c5fc38b3b0
+	- fabric-recipe-api-v1 5.0.6+9c745bbbb0
+	- fabric-registry-sync-v0 5.0.18+a916f7c5b0
+	- fabric-rendering-data-attachment-v1 0.3.46+73761d2eb0
+	- fabric-rendering-fluids-v1 3.1.3+2c869dedb0
+	- fabric-resource-conditions-api-v1 4.2.0+a5d5299db0
+	- fabric-resource-loader-v0 1.1.1+f4bfb622b0
+	- fabric-screen-handler-api-v1 1.3.75+8c7b71c2b0
+	- fabric-transfer-api-v1 5.1.7+7fc4b352b0
+	- fabric-transitive-access-wideners-v1 6.0.10+74e2f560b0
+	- fabricloader 0.15.11
+	- java 21
+	- minecraft 1.20.6
+	- mixinextras 0.3.5
+[12:22:25] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/home/zerocool/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.13.3+mixin.0.8.5/9527e6b0d2449408958fd1302594dc65ec5ade9c/sponge-mixin-0.13.3+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
+[12:22:25] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[12:22:25] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[12:22:25] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[12:22:26] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.5).
+[12:22:35] [main/INFO] (example) Server init started !
+[12:22:35] [main/INFO] (example) Server init finished !
+[12:22:35] [main/INFO] (FabricDataGenHelper) Running data generator for example
+[12:22:35] [main/INFO] (Minecraft) Starting provider: Fabric Example/Model Definitions
+[12:22:35] [main/INFO] (Minecraft) Fabric Example/Model Definitions finished after 97 ms
+[12:22:35] [main/INFO] (Minecraft) Starting provider: Fabric Example/Language (en_us)
+[12:22:36] [main/INFO] (Minecraft) Fabric Example/Language (en_us) finished after 372 ms
+[12:22:36] [main/INFO] (Minecraft) All providers took: 473 ms
+[12:22:36] [main/INFO] (Minecraft) Caching: total files: 14, old count: 11, new count: 14, removed stale: 1, written: 3

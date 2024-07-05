@@ -1,0 +1,13 @@
+// 1.20.6	2024-07-05T12:22:36.370364146	Fabric Example/Model Definitions
+a9b646b39f0fa1e11f2078b301bdac1efca8230c assets/example/models/block/food_chest.json
+e94f32d0c30e4b97496c9e13d40a38f356ee0436 assets/example/models/block/counting_furnace_on.json
+59ff8a7b819dd0daad9a0b419dd3514aff3a1628 assets/example/blockstates/conditional_torch.json
+fc6bea89458760472e61e549d1d4d30ae4502771 assets/example/models/item/conditional_torch.json
+a5da256d505ce423546c317555219e86beed1fab assets/example/blockstates/conditional_wall_torch.json
+dcb2effff21e1fc5b10710afee50ac9785743aaf assets/example/models/item/food_chest.json
+501b1d85ba9b277a4aa8fec7c3050ed29bc6a0e1 assets/example/models/block/counting_furnace.json
+f7e431007cf55f9ee3de8b2f2a30ede226d05a7e assets/example/models/item/counting_furnace.json
+64a15c5aeb07f4a6da1836bdcb6123773b338d8c assets/example/blockstates/food_chest.json
+29221d8584714801bda024f93ab0ae700f9e4931 assets/example/blockstates/counting_furnace.json
+501ec70c7feed67b44417f3ed7be4dc795a2a6fe assets/example/models/block/conditional_torch.json
+94f6002492c6f968a2497a6672b5eefe8cdabe9d assets/example/models/block/conditional_wall_torch.json

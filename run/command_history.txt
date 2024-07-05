@@ -1,0 +1,18 @@
+/setblock ~ ~-1 ~ example:counting_furnace
+/give @s example:counting_furnace
+/give @s furnace
+/data get block -54 88 -22
+/data get block -54 88 -21
+/give @s example:conditional_torch
+/kill @e[type=!minecraft:player]
+/t
+/kill @e[type=!minecraft:player]
+/gamerule doMobSpawning false
+/kill @e[type=!minecraft:player]
+/give @s example:food_chest
+/data get entity Player806 SelectedItem
+/setblock -35 84 -34 example:food_chest{"Items":{}} replace
+/give @s example:conditional_torch
+/give @s example:counting_furnace
+/time set night
+/kill @e[type=!minecraft:player]

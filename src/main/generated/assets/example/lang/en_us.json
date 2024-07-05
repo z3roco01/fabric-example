@@ -1,0 +1,6 @@
+{
+  "block.example.conditional_torch": "Conditional Torch",
+  "block.example.counting_furnace": "Counting Furnace",
+  "block.example.food_chest": "Food Chest",
+  "example.container.counting_furnace.smelted_msg": "Smelted"
+}
